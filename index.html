@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rust Render</title>
+  <script type="module" src="js/main.js"></script>
+  <style type="text/css">
+    body {
+      padding: 0;
+      margin: 0;
+      color: white;
+    }
+    canvas {
+      image-rendering: pixelated;
+      transform: scale(2);
+    }
+    .holder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgb(23, 24, 20);
+      flex-direction: column;
+      height: 100vh;
+    }
+    .stats {
+      position: fixed;
+      bottom: 0;
+      left: 1em;
+      font-family: monospace;
+      opacity: 0.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="holder">
+    <canvas width="320" height="240" id="canvas"></canvas>  
+  </div>
+  <p class="stats" id="timer">timer</p>
+</body>
+</html>
